@@ -16,17 +16,24 @@
     font-family: 'Tajawal', sans-serif;
 }
 
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+    position: relative;
+}
+
 html {
-    overflow-x: hidden;
     background-color: var(--bg-light);
 }
 
 body {
-    background: linear-gradient(to bottom, #ffffff 0%, var(--bg-light) 50%, #ffffff 100%);
+    background: linear-gradient(to bottom, #ebfcfa 0%, var(--bg-light) 50%, #ebfcfa 100%) !important;
     color: var(--text-dark);
-    overflow-x: hidden;
     padding-bottom: 120px;
-    max-width: 100%;
+    min-height: 100vh;
 }
 
 a {
@@ -425,13 +432,13 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 15px;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     color: var(--white);
-    padding: 20px 50px;
-    border-radius: 40px;
-    font-size: 24px;
-    font-weight: 800;
+    padding: 24px 60px;
+    border-radius: 50px;
+    font-size: 28px;
+    font-weight: 900;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     border: none;
     box-shadow: 0 10px 25px rgba(18, 184, 197, 0.35);
@@ -484,7 +491,7 @@ section {
 .huge-percent {
     position: absolute;
     top: 50px;
-    right: -200px;
+    right: -50px;
     font-size: 120px;
     font-weight: 900;
     color: var(--text-dark);
