@@ -283,7 +283,7 @@ function injectFloatingAdmin() {
         btn.id = 'floating-admin-btn';
         btn.innerHTML = '<i class="fas fa-user-shield"></i>';
         btn.title = "لوحة الإدارة";
-        btn.style.cssText = 'position:fixed; bottom:20px; left:40px; z-index:99999; background:linear-gradient(135deg, #121e33, #1e3c72); color:#fff; border:none; width:75px; height:75px; border-radius:50%; font-family:"Tajawal"; font-weight:800; box-shadow:0 10px 20px rgba(0,0,0,0.4); cursor:pointer; font-size:30px; transition:0.3s; display:flex; align-items:center; justify-content:center; border:2px solid rgba(255,255,255,0.2);';
+        btn.style.cssText = 'position:fixed; bottom:20px; left:20px; z-index:99999; background:linear-gradient(135deg, #121e33, #1e3c72); color:#fff; border:none; width:65px; height:65px; border-radius:50%; font-family:"Tajawal"; font-weight:800; box-shadow:0 10px 20px rgba(0,0,0,0.4); cursor:pointer; font-size:25px; transition:0.3s; display:flex; align-items:center; justify-content:center; border:2px solid rgba(255,255,255,0.2);';
         btn.onclick = () => { if (typeof promptAdmin === 'function') promptAdmin(); else if (window.promptAdmin) window.promptAdmin(); };
         btn.onmouseover = () => btn.style.transform = 'scale(1.1)';
         btn.onmouseout = () => btn.style.transform = 'scale(1)';
@@ -1400,7 +1400,7 @@ window.injectThemeButton = function () {
     btn.id = 'theme-toggle-btn';
     btn.title = 'تغيير المظهر';
     btn.innerHTML = '<i class="fas fa-moon"></i>';
-    btn.style.cssText = 'position:fixed; bottom:100px; left:40px; z-index:99999; background:linear-gradient(135deg, #b8860b, #d4af37); color:#000; border:none; width:75px; height:75px; border-radius:50%; font-size:30px; box-shadow:0 10px 20px rgba(212,175,55,0.4); cursor:pointer; display:flex; justify-content:center; align-items:center; transition:transform 0.3s; border:2px solid rgba(255,255,255,0.2);';
+    btn.style.cssText = 'position:fixed; bottom:100px; left:20px; z-index:99999; background:linear-gradient(135deg, #b8860b, #d4af37); color:#000; border:none; width:65px; height:65px; border-radius:50%; font-size:25px; box-shadow:0 10px 20px rgba(212,175,55,0.4); cursor:pointer; display:flex; justify-content:center; align-items:center; transition:transform 0.3s; border:2px solid rgba(255,255,255,0.2);';
     btn.onmouseover = () => btn.style.transform = 'scale(1.1)';
     btn.onmouseout = () => btn.style.transform = 'scale(1)';
 
@@ -1552,7 +1552,7 @@ window.injectWhatsAppButton = function () {
     btn.target = '_blank';
     btn.title = 'تواصل معنا عبر واتساب';
     btn.innerHTML = '<i class="fab fa-whatsapp"></i>';
-    btn.style.cssText = 'position:fixed; bottom:20px; right:40px; z-index:99999; background:linear-gradient(135deg, #25d366, #128c7e); color:#fff; width:70px; height:70px; border-radius:50%; font-size:40px; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 20px rgba(37,211,102,0.4); transition:0.3s; animation: pulse-gentle 2s infinite; text-decoration:none;';
+    btn.style.cssText = 'position:fixed; bottom:20px; right:20px; z-index:99999; background:linear-gradient(135deg, #25d366, #128c7e); color:#fff; width:60px; height:60px; border-radius:50%; font-size:35px; display:flex; align-items:center; justify-content:center; box-shadow:0 10px 20px rgba(37,211,102,0.4); transition:0.3s; animation: pulse-gentle 2s infinite; text-decoration:none;';
     btn.onmouseover = () => btn.style.transform = 'scale(1.1)';
     btn.onmouseout = () => btn.style.transform = 'scale(1)';
     document.body.appendChild(btn);
