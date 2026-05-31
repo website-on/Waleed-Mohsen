@@ -1660,3 +1660,38 @@ section {
         padding: 8px;
     }
 }
+
+/* Mobile-only enhancements (Touch Devices) */
+@media (hover: none) and (pointer: coarse) {
+
+    #theme-toggle-btn,
+    #floating-admin-btn,
+    #floating-admin-btn-static {
+        width: 85px !important;
+        height: 85px !important;
+        font-size: 35px !important;
+        left: 20px !important;
+    }
+
+    a[href*="whatsapp.com"],
+    a[title*="واتساب"] {
+        width: 80px !important;
+        height: 80px !important;
+        font-size: 45px !important;
+        right: 20px !important;
+    }
+
+    .btn-primary,
+    .ultra-btn,
+    .ultra-btn-white {
+        font-size: 26px !important;
+        padding: 22px 55px !important;
+    }
+
+    html,
+    body {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
+        position: relative !important;
+    }
+}
